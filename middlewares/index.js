@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken")
 
-module.exports.tokenVerify = async (req) => {
+module.exports.tokenVerify = async (req, res, next) => {
   // token verification
   // Token Format: Bearer <token>
   try {
